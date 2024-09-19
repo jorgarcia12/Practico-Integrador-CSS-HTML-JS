@@ -185,11 +185,13 @@
   padding: 0.4rem;
   border-radius: 0.4rem;
 }
-.listAside ul li:hover{
+
+.listAside ul li:hover {
   cursor: pointer;
   background-color: #1e3f72;
   color: white;
 }
+
 .liActive {
   background-color: #1e3f72;
   color: white;
@@ -263,4 +265,38 @@
 
 .delete {
   background-color: rgb(240, 45, 45);
+}
+
+/* ===== MEDIA QUERYS ===== */
+
+@media screen and (min-width: 1280px) {
+  .containerProductStore {
+
+    grid-template-columns: repeat(4, 0.6fr);
+
+  }
+
+  .containerTargetItem {
+    width: 15vw;
+
+  }
+}
+
+
+/* ===== SCROLL BAR ===== */
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+  background-color: white;
+  border-radius: 0.4rem;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #1e3f72;
+  border-radius: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6989b8;
 }
